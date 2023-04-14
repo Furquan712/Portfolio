@@ -7,6 +7,11 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
+// template_8r0b49l
+// service_urxw2aj
+// HzKxPYkCG0YfI5fCj
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -17,8 +22,52 @@ const Contact = () => {
 
   const [loading, setloading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const {target} =e;
+    const { name, value } = e.target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    })
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setloading(true);
+
+    emailjs
+    .send(
+      'service_urxw2aj',
+      'template_8r0b49l',
+      {
+        from_name: form.name,
+        to_name: "Syed Md Furquan",
+        from_email: form.email,
+        to_email: "smfurquan0712@gmail.com",
+        message: form.message,
+      },
+      'HzKxPYkCG0YfI5fCj'
+    )
+    .then(
+      ()=> {
+        setloading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+      (error) => {
+        setLoading(false);
+          console.error(error);
+
+          alert("Ahh, something went wrong. Please try again.");
+      }
+    )
+  };
 
   return (
     <div
@@ -26,7 +75,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] m-12 bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -74,7 +123,7 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
           >
-            
+              {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>
