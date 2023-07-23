@@ -15,10 +15,10 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    githubimg,
+    geekster,
+    build,
+    gdsc,
     carrent,
     jobit,
     tripguide,
@@ -38,15 +38,16 @@ import {
       id: "contact",
       title: "Contact",
     },
+    
   ];
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
     {
-      title: "Backend Developer",
+      title: "DevOps Engineer",
       icon: backend,
     },
     {
@@ -54,7 +55,7 @@ import {
       icon: creator,
     },
     {
-      title: "Data Analyst",
+      title: "Machine Learning",
       icon: mobile,
     },
   ];
@@ -116,24 +117,23 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Developer and Instructor",
+      company_name: "Geekster",
+      icon: geekster,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Oct 2022 - current",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Spearheaded company growth by conceptualizing and developing a robust education platform using Next.js and Nest.js, resulting in increased user engagement and revenue generation.        ",
+        "Leveraged REST APIs to seamlessly retrieve and display data from databases, ensuring efficient data management and enhanced user experience.        ",
+        "Drove innovation and excellence as an Educator, designing comprehensive JavaScript and Design curriculum assignments for web development, fostering student growth and knowledge acquisition.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "BuildIt Technologies",
+      company_name: "build",
+      icon: build,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "June 2022 - Sept 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,29 +142,25 @@ import {
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Google Developer Student Club Lead",
+      company_name: "GDSC-INDIA",
+      icon: gdsc,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Sept 2022 - June 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "As a Google Developer Student Club (DSC) lead, lead a community of students interested in technology and entrepreneurship. I was be responsible for organizing and hosting events such as workshops, hackathons, and speaker sessions that focus on developing technical and soft skills.",
+        "Being a DSC lead provides an opportunity to worked closely with Google Developers and other tech industry leaders. I had access to resources and mentorship from Google to help I plan and execute successful events.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "GitHub Campus Expert",
+      company_name: "GitHub",
+      icon: githubimg,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "June 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "GitHub Campus Expert: Actively contributed to the tech community as a GitHub Campus Expert, organizing workshops, hackathons, and tech events to foster collaboration, share knowledge, and promote open-source culture on campus.",
+        "- Conducted engaging presentations and workshops to educate students and faculty on the effective use of GitHub, version control, and collaborative software development practices, empowering the campus community to work efficiently on projects and build strong coding skills.",
       ],
     },
   ];
@@ -172,35 +168,35 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "I thought it was impossible to make a website as beautiful as our product, but Syed proved me wrong.",
+      name: "Taiba Hadees",
+      designation: "Founder",
+      company: "Roush",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "I've never met a web developer who truly cares about their clients' success like Syed does.",
+      name: "Hasan Ashraf",
+      designation: "Client",
+      company: "Urban Science",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
+        "After Syed optimized our app, our traffic increased by 50%. We can't thank them enough!",
+      name: "Angela ",
+      designation: "CEO",
+      company: "Japanese Translation app",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Priodical",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Professionals actively share daily updates on their learning experiences, seeking valuable guidance and mentorship from their peers and colleagues. This open exchange of knowledge fosters a supportive community, enabling skill development and personal growth in their respective fields.",
       tags: [
         {
           name: "react",
@@ -211,54 +207,54 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "NodeJs & Prisma",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Furquan712/priodical",
     },
     {
-      name: "Job IT",
+      name: "Cryptoverse",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Developed a real-time Crypto Tracker web app using React, Tailwind CSS, and Firebase, monitor and track cryptocurrency data seamlessly. The application offers dynamic updates and a user-friendly interface for staying informed about crypto market trends and prices efficiently..",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Firebase",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "chartJs",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Furquan712/crypto-docker",
     },
     {
-      name: "Trip Guide",
+      name: "URL Shortner",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "The MERN-based URL shortener app efficiently transforms long URLs into concise, shareable links, offering seamless redirection to the original destinations. It simplifies link management and enhances user experience through its powerful stack - MongoDB, Express.js, React.js, and Node.js.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Node & Express",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "MongoDB",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Furquan712/url-shortner",
     },
   ];
   

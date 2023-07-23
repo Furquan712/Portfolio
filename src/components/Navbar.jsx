@@ -62,6 +62,12 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+           <li>
+          {/* The target="_blank" attribute opens the link in a new tab */}
+          <a href="https://drive.google.com/file/d/1pSI2g3cmPHShgq0PvTAm2kXVhrxhpeTA/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
+        </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
